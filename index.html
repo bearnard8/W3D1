@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Come spiegare cos'è un algoritmo a mia nonna</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+    </style>
+</head>
+<body>
+    <div id="page-title">
+        <h1>
+            COS'É UN ALGORITMO?
+        </h1>
+        <h3>
+            Lo spiego a mia nonna
+        </h3>
+    </div>
+    <div class="explanation">
+        <p>
+            Immagina di dover pulire tutta la casa, per farlo al meglio ti conviene elencare le cose da fare, capire cosa ti serve per farlo e poi darti delle istruzioni precise per
+            poter raggiungere il tuo obiettivo.
+        </p>
+        <p>
+            Una volta elencate le cose da fare le esegui una per una, fino a che la casa non è pulita.
+        </p>
+    </div>
+    <div id="container">
+        <div id="grid-explanation">
+            <div class="step-by-step" id="box-step1">
+                <img src="assets/folding-clothes.webp" alt="" id="img-step1">
+                <span id="text-step1">
+                    1. Piegare i panni puliti
+                </span>
+            </div>
+            <div class="step-by-step" id="box-step2">
+                <img src="assets/cleaning-kitchen.webp" alt="" id="img-step2">
+                <span id="text-step2">
+                    2. Pulire la cucina
+                </span>
+            </div>
+            <div class="step-by-step" id="box-step3">
+                <img src="assets/washing-windows.webp" alt="" id="img-step3">
+                <span id="text-step3">
+                    3. Lavare le finestre
+                </span>
+            </div>
+            <div class="step-by-step" id="box-step4">
+                <img src="assets/dusting-furniture.webp" alt="" id="img-step4">
+                <span id="text-step4">
+                    4. Spolverare i mobili
+                </span>
+            </div>
+            <div class="step-by-step" id="box-step5">
+                <img src="assets/making-bed.webp" alt="" id="img-step5">
+                <span id="text-step5">
+                    5. Rifare i letti
+                </span>
+            </div>
+            <div class="step-by-step" id="box-step6">
+                <img src="assets/ordering-fridge.webp" alt="" id="img-step6">
+                <span id="text-step6">
+                    6. Mettere in ordine il frigo
+                </span>
+            </div>
+            <div class="step-by-step" id="box-step7">
+                <img src="assets/washing-dishes.webp" alt="" id="img-step7">
+                <span id="text-step7">
+                    7. Lavare i piatti
+                </span>
+            </div>
+            <div class="step-by-step" id="box-step8">
+                <img src="assets/washing-floor.webp" alt="" id="img-step8">
+                <span id="text-step8">
+                    8. Lavare i pavimenti
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="explanation">
+        <p>
+            Nell'eseguire queste istruzioni devi tenere traccia del progresso che stai facendo, magari avrai da piegare 20 magliette, o da lavare 10 piatti. Per aiutarti a tenere traccia
+            di questi valori ci sono le variabili!
+        </p>
+        <div id="clothes-example">
+            <div id="clothes-description">
+                <p>
+                    Le variabili possono contenere questi numeri e cambiare mano a mano che fai le cose. Ad esempio ogni volta che pieghi un vestito la variabile vestitiDaPiegare potrebbe diminuire
+                    di uno.                
+                </p>
+                <p id="hidden-example-1">
+                    let vestitiDaPiegare = 35;  (così si dichiara una variabile, ma in inglese: unfoldedClothes)
+                </p>
+            </div>
+            <img src="assets/folded-clothes.webp" alt="">
+        </div>
+        <p>
+            Quando sarà arrivata a zero saprai che non ci sono più vestiti da piegare.
+        </p>
+        <div id="dishes-example">
+            <img src="assets/dirty-dishes.webp" alt="">
+            <div id="dishes-description">
+                <p>
+                    O ancora si può indicare il numero di piatti da lavare, che diminuisce di uno a ogni piatto lavato. Quando sarà arrivato a 0 saprai che tutti i piatti sono stati lavati!
+                </p>
+                <p id="hidden-example-2">
+                    let dirtyDishes = 10;
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
