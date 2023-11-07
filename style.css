@@ -17,7 +17,9 @@ body {
     margin: 20px;
 }
 
-#page-title h3 {
+#subtitle {
+    margin: 10px;
+    color: rgb(97, 97, 97);
 }
 
     /*main*/
@@ -30,6 +32,11 @@ body {
 
 .explanation * {
     padding: 5px;
+}
+
+.instructions {
+    color: gray;
+    font-size: smaller;
 }
 
 #container {
@@ -45,7 +52,7 @@ body {
     justify-content: space-evenly;
     padding: 5px;
     margin: 10px;
-    background-color: rgb(236, 236, 236);
+    background-color: #d3c3c333;
     border-radius: 15px;
 }
 
@@ -122,25 +129,39 @@ body {
     width: 100%;
     justify-content: center;
     align-items: center;
-    margin: 15px 0px;
+    margin: 25px 0px;
     position: relative;
 }
 
 #clothes-example img, #dishes-example img {
-    width: 25%;
-}
-
-#dishes-description, #clothes-description {
-    display: flex;
-    flex-wrap: wrap;
+    width: 15%;
 }
 
 #hidden-example-1, #hidden-example-2 {
+    text-align: center;
     font-weight: bold;
     font-style: italic;
-    display: none;
+    opacity: 0;
 }
 
-#clothes-example:hover #hidden-example-1 {
-    display: block;
+#clothes-example:hover #hidden-example-1, #dishes-example:hover #hidden-example-2 {
+    opacity: 100;
+    transition: opacity 0.5s;
+}
+
+#clothes-example:hover, #dishes-example:hover {
+    background-color: #FFE3DF;
+    box-shadow: 0px 0px 15px rgb(182, 124, 124);
+    transition: background-color 1.5s, box-shadow 0.5s;
+}
+
+#clothes-example:not(hover) #hidden-example-1, #dishes-example:not(hover) #hidden-example-2 {
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+#clothes-example:not(hover), #dishes-example:not(hover) {
+    background-color: rgba(248, 218, 218, 0.137);
+    box-shadow: none;
+    transition: background-color 1.5s, box-shadow 0.5s;
 }

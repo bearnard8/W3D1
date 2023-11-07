@@ -14,17 +14,23 @@
         <h1>
             COS'É UN ALGORITMO?
         </h1>
-        <h3>
+        <h3 id="subtitle">
             Lo spiego a mia nonna
         </h3>
     </div>
-    <div class="explanation">
+    <div class="explanation" id="first-explanation">
         <p>
-            Immagina di dover pulire tutta la casa, per farlo al meglio ti conviene elencare le cose da fare, capire cosa ti serve per farlo e poi darti delle istruzioni precise per
+            Un'algoritmo é una serie di istruzioni necessarie per risolvere un problema.
+        </p>
+        <p>
+            Immagina di dover pulire tutta la casa, per farlo al meglio elenchi tutte le cose da fare, ragioni su cosa ti serve per farlo e poi segue delle istruzioni precise per
             poter raggiungere il tuo obiettivo.
         </p>
         <p>
             Una volta elencate le cose da fare le esegui una per una, fino a che la casa non è pulita.
+        </p>
+        <p class="instructions">
+            Prova a scorrere sulle immagini per scoprire quali sono le istruzioni per pulire casa.
         </p>
     </div>
     <div id="container">
@@ -84,6 +90,9 @@
             Nell'eseguire queste istruzioni devi tenere traccia del progresso che stai facendo, magari avrai da piegare 20 magliette, o da lavare 10 piatti. Per aiutarti a tenere traccia
             di questi valori ci sono le variabili!
         </p>
+        <p class="instructions">
+            Scorri sui riquadri qui sotto per capire come si dichiara e assegna una variabile.
+        </p>
         <div id="clothes-example">
             <div id="clothes-description">
                 <p>
@@ -103,13 +112,31 @@
             <img src="assets/dirty-dishes.webp" alt="">
             <div id="dishes-description">
                 <p>
-                    O ancora si può indicare il numero di piatti da lavare, che diminuisce di uno a ogni piatto lavato. Quando sarà arrivato a 0 saprai che tutti i piatti sono stati lavati!
+                    O ancora si può indicare il numero di piatti da lavare, che diminuisce di uno a ogni piatto lavato. Quando sarà pari a 0 saprai che tutti i piatti sono stati lavati!
                 </p>
                 <p id="hidden-example-2">
                     let dirtyDishes = 10;
                 </p>
             </div>
         </div>
+        <p>
+            Peró le variabili possono avere formati di dati diversi, e quello che contengono puó variare a seconda delle nostre esigenze.
+        </p>
+        <p>
+            Per esempio quelle numeriche possono contenere anche valori decimali, oppure delle stringhe di dati (non quelle delle scarpe, ma parole o insiemi di caratteri,
+            solitamente racchiuse tra due virgolette "")
+        </p>
+        <p>
+            O ancora possono avere dei valori booleani, si intende VERO o FALSO. Ad esempio dopo aver pulito la casa la var isHouseCleaned potrebbe avere il valore di VERO,
+            in modo da ricordarcelo e non ricominciare da capo senza motivo.
+        </p>
+        <p>
+            Oltre alle variabili possiamo usare anche delle costanti, per ricordarci dei valori che non cambiano mai. Per esempio quando ci sará l'istruzione per far
+            partire la lavatrice una costante potrá ricordarci che dobbiamo usare 2 tappi di ammorbidente!
+        </p>
     </div>
+    
+    
+
 </body>
 </html>
