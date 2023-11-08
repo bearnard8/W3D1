@@ -4,6 +4,7 @@
     padding: 0px;
     margin: 0px;
     box-sizing: content-box;
+    user-select: none;
 }
 
 body {
@@ -164,4 +165,24 @@ body {
     background-color: rgba(248, 218, 218, 0.137);
     box-shadow: none;
     transition: background-color 1.5s, box-shadow 0.5s;
+}
+
+    /* Type of Data */
+
+#type-of-data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* #left-side {
+    width: 100%;
+} */
+
+#right-side img{
+    width: 55%;
+}
+
+#type-of-data:hover #left-side {
+    
 }
